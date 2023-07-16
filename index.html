@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Michael's Webpage</title>
+    <link rel="icon" type="image/x-icon" href="otter.png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <style>
+        body {
+            font-family: Epilogue, Geneva, Tahoma, sans-serif;
+            font-weight: bolder;
+            color: #17252A;
+            background-color: #3AAFA9;
+            text-align: left;
+        }
+        .whatAmIStudying {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="heading">
+    <h1 style="text-align: center">Michael's Webpage</h1>
+    <p style="text-align: center">Hi, my name is Michael Caldow, welcome to my webpage!</p>
+    </div>
+
+    <br>
+
+    <div class="whatAmIStudying" id="whatAmIStudying">
+    <h1>What I am studying this trimester</h1>
+    <table class="subjectTable">
+        <tr>
+            <th>Unit Code</th>
+            <th>Unit Name</th>
+            <th>Goal Grade</th>
+        </tr>
+        <tr>
+            <td>SIT120</td>
+            <td>Introduction to Responsive Web Apps</td>
+            <td>HD</td>
+        </tr>
+        <tr>
+            <td>SIT182</td>
+            <td>Real World Practices for Cyber Security</td>
+            <td>HD</td>
+        </tr>
+        <tr>
+            <td>SIT224</td>
+            <td>Information Technology Systems and Innovation</td>
+            <td>HD</td>
+        </tr>
+    </table>
+    </div>
+    <br>
+    
+    <div class="hobbies" id="hobbies">
+    <h1>What are my hobbies</h1>
+    <p>My hobbies include:</p>
+    <ul>
+        <li>Running</li>
+        <li>Cooking</li>
+        <li>Learning other languages</li>
+        <li>Studying IT</li>
+        <li>Hiking</li>
+        <li>Spending time with my family (which includes my three dogs)</li>
+    </ul>
+    </div>
+    <br>
+
+    <div class="animalSection" id="favouriteAnimal">
+    <h1>Favourite Animal</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg" alt="Otter in water" id="otterImage">
+    </div>
+
+    <div class="animalSection" id="animalQuiz">
+    <h2>What kind of animal is this?</h2>
+    <p>Select your answer and enter your name</p>
+    <form action="submitpage.html">
+        <input type="radio" id="squirrel" name="animal">
+        <label for="squirrel">Squirrel</label><br>
+        <input type="radio" id="rat" name="animal">
+        <label for="rat">Rat</label><br>
+        <input type="radio" id="otter" name="animal">
+        <label for="otter">Otter</label><br>
+        <input type="radio" id="seal" name="animal">
+        <label for="seal">Seal</label><br>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+        <input type="submit" value="Submit">
+    </form>
+    </div>
+    <div class="animalSection" id="findOutMore">
+    <h2>If you think this animal is cute, <a href="https://youtu.be/rc43rHgAFNI" target="_blank">check this video of them</a></h2>
+    </div>
+    <h1>References</h1>
+    <p><a href="https://iconduck.com/emojis/38452/otter" target="_blank">https://iconduck.com/emojis/38452/otter</a></p>
+</body>
+</html>

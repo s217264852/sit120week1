@@ -1,0 +1,16 @@
+
+.subjectTable {
+    background-color: #FEFFFF;border-collapse:collapse;align-content: left;
+}
+.subjectTable th {
+    background-color: #000;color: white;text-align: left;
+}
+.subjectTable td, .subjectTable th {
+    padding: 5px;border: 1px solid #000;text-align: left;
+}
+
+img {
+    height: 30%;
+    width: 30%;
+
+}
