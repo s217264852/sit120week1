@@ -1,16 +1,17 @@
-
+/*all elements with class subjectTable will be styled with the following attributes*/
 .subjectTable {
     background-color: #FEFFFF;border-collapse:collapse;align-content: left;
 }
+/*all elements with class subjectTable and tag <th> will be styled with the following attributes*/
 .subjectTable th {
-    background-color: #000;color: white;text-align: left;
+    background-color: #000;color: white;
 }
+/*all elements with class subjectTable and <td> and <th> tags will be styled with the following attributes*/
 .subjectTable td, .subjectTable th {
     padding: 5px;border: 1px solid #000;text-align: left;
 }
-
+/*all image elements will be styled with the following attributes*/
 img {
     height: 30%;
     width: 30%;
-
 }
