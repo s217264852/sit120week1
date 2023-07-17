@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--Titling my website so that "Michael's Webpage" is written in the tab of the web browser. An image of an otter is used as the favicon.
+    An external stylesheet called "styles.css" is linked to this page so it can style elements within this HTML document-->
     <title>Michael's Webpage</title>
     <link rel="icon" type="image/x-icon" href="otter.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
 
+    <!--Including style tag for internal CSS. Using the font family Epilogue, Geneva, Tahoma for the font for all text within the body of the HTML page
+      Using color #17252A for the text color and #3AAFA9 for the background of all content within the body of the HTML document-->
     <style>
         body {
             font-family: Epilogue, Geneva, Tahoma, sans-serif;
@@ -13,23 +17,24 @@
             background-color: #3AAFA9;
             text-align: left;
         }
-        .whatAmIStudying {
-            margin-left: auto;
-            margin-right: auto;
-        }
     </style>
-
 </head>
+
 <body>
+    <!--Creating a division with the class "heading" to keep the elements within the heading separate from other parts of the HTML page
+    Using inline CSS for <h1> and <p> as I want these elements to be centered on the page, while the rest of the body to be aligned to the left-->
     <div class="heading">
     <h1 style="text-align: center">Michael's Webpage</h1>
     <p style="text-align: center">Hi, my name is Michael Caldow, welcome to my webpage!</p>
     </div>
-
+    <!--Including a <br> to create spacing between the heading and the rest of the body-->
     <br>
 
+    <!--Creating a division with class and id "whatAmIStudying" to keep this separate from other parts of the body. This will include a table-->
     <div class="whatAmIStudying" id="whatAmIStudying">
     <h1>What I am studying this trimester</h1>
+    <!--Creating a table with class "subjectTable" so this table can be styled using an external style sheet styles.css.
+    Headings of "Unit Code", "Unit Name", and "Goal Grade" are used, all items listed under these columns are entered as table date <td>-->
     <table class="subjectTable">
         <tr>
             <th>Unit Code</th>
@@ -54,7 +59,8 @@
     </table>
     </div>
     <br>
-    
+
+    <!--A division with class and id "hobbies" is created to keep elements within this section separate from the rest of the page-->
     <div class="hobbies" id="hobbies">
     <h1>What are my hobbies</h1>
     <p>My hobbies include:</p>
@@ -69,15 +75,19 @@
     </div>
     <br>
 
+    <!--A division with class "animalSection" is created to keep elements within this section separate from the rest of the page
+    This division has the id "favouriteAnimal" so that the image and title can be separate from the other sections of "animalSection"-->
     <div class="animalSection" id="favouriteAnimal">
     <h1>Favourite Animal</h1>
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg" alt="Otter in water" id="otterImage">
     </div>
 
+    <!--A division with id "animalQuiz" is created to separate the form from the rest of the animal section-->
     <div class="animalSection" id="animalQuiz">
     <h2>What kind of animal is this?</h2>
     <p>Select your answer and enter your name</p>
-    <form action="submitpage.html" target="_blank">
+    <form action="submitpage.html" target="_blank"> <!--action is set to "submitpage.html" so that when the form is submitted, it takes users to this HTML page.
+    target is equal to "_blank" so that when the user submits the form, the HTML page submitpage.html is opened in a new tab-->
         <input type="radio" id="squirrel" name="animal">
         <label for="squirrel">Squirrel</label><br>
         <input type="radio" id="rat" name="animal">
@@ -91,11 +101,15 @@
         <input type="submit" value="Submit">
     </form>
     </div>
+
+    <!--A division is created with id "findOutMore" to keep this separate from elements in class "animalSection"-->
     <div class="animalSection" id="findOutMore">
+    <!--"check this video of them is a link that takes you to a youtube video of my favourite animals-->
     <h2>If you think this animal is cute, <a href="https://youtu.be/rc43rHgAFNI" target="_blank">check this video of them</a></h2>
     </div>
+
     <h1>References</h1>
-    <p><a href="https://en.wikipedia.org/wiki/Sea_otter#/media/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg" target="_blank">https://en.wikipedia.org/wiki/Sea_otter#/media/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg</a></p>
     <p><a href="https://iconduck.com/emojis/38452/otter" target="_blank">https://iconduck.com/emojis/38452/otter</a></p>
+    <p><a href="https://en.wikipedia.org/wiki/Sea_otter#/media/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg" target="_blank">https://en.wikipedia.org/wiki/Sea_otter#/media/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg</a></p>
 </body>
 </html>
